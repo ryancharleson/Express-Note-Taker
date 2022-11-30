@@ -35,6 +35,7 @@ notes.post('/', (req,res) => {
 
 });
 
+
 //Get Route to Parse Data and display from db file where nodes are stored.
 notes.get('/', (req, res) => {
     readFile('./db/db.json').then((data) => res.json(JSON.parse(data))
