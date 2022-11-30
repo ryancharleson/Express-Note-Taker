@@ -32,3 +32,12 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'))
 });
 
+
+// Console log to view port
+app.listen(PORT, () => {
+    console.log(`Now Listening at PORT: ${PORT} `)
+});
+
+
+
+module.exports = app;
